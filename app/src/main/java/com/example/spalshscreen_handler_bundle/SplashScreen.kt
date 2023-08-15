@@ -13,6 +13,7 @@ class SplashScreen : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this@SplashScreen , MainActivity::class.java))
+            finish()
         },4000)
     }
 }
